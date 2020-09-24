@@ -42,7 +42,7 @@ public class CraftTweakerSupport {
 		private final ItemStack[] inputs;
 		private final ItemStack output;
 		
-		private AddPotRecipe(IIngredient input, IItemStack output) {
+		AddPotRecipe(IIngredient input, IItemStack output) {
 			this.inputs = CraftTweakerMC.getExamples(input);
 			this.output = CraftTweakerMC.getItemStack(output);
 		}
@@ -64,7 +64,7 @@ public class CraftTweakerSupport {
 		private final ItemStack[] inputs;
 		private final ItemStack output;
 		
-		private AddPotRecipe(IIngredient input, IItemStack output) {
+		AddPanRecipe(IIngredient input, IItemStack output) {
 			this.inputs = CraftTweakerMC.getExamples(input);
 			this.output = CraftTweakerMC.getItemStack(output);
 		}
@@ -85,7 +85,7 @@ public class CraftTweakerSupport {
 	private static final class AddSmelterEntry implements IAction {
 		private final ItemStack[] entries;
 		
-		private AddPotRecipe(IIngredient entry) {
+		AddSmelterEntry(IIngredient entry) {
 			this.entries = CraftTweakerMC.getExamples(entry);
 		}
 		
@@ -105,7 +105,7 @@ public class CraftTweakerSupport {
 	private static final class RemoveSmelterEntry implements IAction {
 		private final ItemStack[] entries;
 		
-		private AddPotRecipe(IIngredient entry) {
+		RemoveSmelterEntry(IIngredient entry) {
 			this.entries = CraftTweakerMC.getExamples(entry);
 		}
 		
